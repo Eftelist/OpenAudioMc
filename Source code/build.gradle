@@ -1,3 +1,7 @@
+plugins {
+	id 'com.github.johnrengelman.plugin-shadow' version '4.0.1'
+}
+
 apply plugin: 'java'
 apply plugin: 'maven'
 
@@ -15,7 +19,7 @@ tasks.withType(JavaCompile) {
 
 
 repositories {
-        
+     mavenLocal()
      maven { url "https://hub.spigotmc.org/nexus/content/groups/public/" }
      maven { url "http://maven.sk89q.com/repo/" }
      maven { url "http://repo.maven.apache.org/maven2" }
